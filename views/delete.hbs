@@ -1,0 +1,9 @@
+{{> header }}
+<h2 class="text-xl text-center mt-5"> Delete Note </h2>
+<form action="/delete?_method=DELETE" method="post"  class="flex flex-col gap-y-5 justify-center items-center w-full mt-5">
+        <input type="text" name="id" class="border p-2 rounded-md outline-none" placeholder="Enter ID"/>
+        <input type="submit" value="Delete"  class="bg-purple-700 hover:bg-purple-500 text-white p-3 rounded-md"/>
+</form>
+{{> footer}}
+
+    

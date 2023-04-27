@@ -1,0 +1,13 @@
+{{> header}}
+<h2  class="text-xl text-center mt-5"> Below are all notes. </h2>
+<div class="mt-10 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 mx-3 sm:grid-cols-2 md:grid-cols-3 gap-5">
+{{#each data}}
+<div class="border p-3 rounded-md hover:drop-shadow-xl">
+    <div class="font-bold text-lg text-purple-700 text-[#333]">{{this.title}}</div>
+    <div class="text-gray text-sm">{{this.description}}</div>
+</div>
+{{/each}}
+</div>
+</div>
+{{> footer}}
